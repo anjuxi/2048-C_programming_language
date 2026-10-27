@@ -1,65 +1,66 @@
-# 2048 游戏 - EGE 图形界面版本
+# 2048 — EGE Graphics Version
 
-一个使用 EGE (Easy Graphics Engine) 图形库开发的经典 2048 游戏。
+A classic 2048 game built with EGE (Easy Graphics Engine).
 
-## 游戏特性
+## Features
 
-- 🎨 **图形化界面**：精美的彩色方块设计
-- ⌨️ **流畅操作**：支持键盘方向键控制
-- 🏆 **计分系统**：实时显示游戏分数
-- 🎯 **胜利/失败检测**：达到 2048 获胜，无法移动时游戏结束
-- 🔄 **重新开始**：按 R 键随时重新开始
+- Graphical interface with colored tiles
+- Arrow-key controls
+- Live score display
+- Win/lose detection: reach 2048 to win; the game ends when no moves remain
+- Press R to restart at any time
 
-## 编译运行
+## Build and Run
 
-### 环境要求
+### Requirements
 
 [![C++](https://img.shields.io/badge/C%2B%2B-11%2B-blue.svg)](https://isocpp.org/)
 [![MinGW](https://img.shields.io/badge/MinGW-64%20bit-green.svg)](http://www.mingw-w64.org/)
 [![EGE](https://img.shields.io/badge/EGE-20.08%2B-orange.svg)](https://xege.org/)
 
-### 编译命令
+### Build
 
 ```bash
 g++ 2048.cpp -o 2048.exe -ID:\mingw64\include -LD:\mingw64\lib -lgraphics -lgdi32 -lgdiplus -limm32 -lmsimg32 -lole32 -loleaut32 -lwinmm -luuid
 ```
 
-### 运行
+Adjust the `-I` and `-L` paths to match your MinGW/EGE installation.
+
+### Run
 
 ```bash
 ./2048.exe
 ```
 
-## 操作说明
+## Controls
 
-| 按键 | 功能         |
-| ---- | ------------ |
-| ↑    | 向上移动     |
-| ↓    | 向下移动     |
-| ←    | 向左移动     |
-| →    | 向右移动     |
-| R    | 重新开始游戏 |
+| Key | Action |
+| ---- | -------- |
+| ↑ | Move up |
+| ↓ | Move down |
+| ← | Move left |
+| → | Move right |
+| R | Restart |
 
-## 游戏规则
+## Rules
 
-1. 游戏在 4x4 的网格上进行
-2. 使用方向键移动方块
-3. 相同数字的方块碰撞时会合并成它们的和
-4. 每次移动后会在空白位置随机生成一个 2 或 4
-5. 达到 2048 即为胜利
-6. 无法移动且没有空格时游戏结束
+1. The game is played on a 4×4 grid.
+2. Use the arrow keys to slide tiles.
+3. Tiles with the same number merge into one tile with their sum.
+4. After each move, a new 2 or 4 appears in a random empty cell.
+5. Reach 2048 to win.
+6. If no moves are possible and no cells are empty, the game is over.
 
-## 技术实现
+## Tech
 
-- **语言**：C++11
-- **图形库**：EGE (Easy Graphics Engine)
-- **编译器**：MinGW-w64
-- **平台**：Windows
+- Language: C++11
+- Graphics: EGE (Easy Graphics Engine)
+- Compiler: MinGW-w64
+- Platform: Windows
 
-## 作者信息
+## Author
 
-**谙弆悕博士（Ailan Anjuxi）**
+**Dr. Ailan Anjuxi (谙弆悕)**
 
-- 📧 邮箱：anjuxi.ME@outlook.com
-- 📞 SIP 电话：sip:anjuxi@sip.linphone.org
-
+- Email: anjuxi.ME@outlook.com
+- SIP: sip:anjuxi@sip.linphone.org
